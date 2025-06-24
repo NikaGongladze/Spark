@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/badHabits">
+
+    <fragment
+        android:id="@+id/badHabits"
+        android:name="com.example.spark.fragments.BadHabits"
+        android:label="fragment_bad_habits"
+        tools:layout="@layout/fragment_bad_habits" />
+    <fragment
+        android:id="@+id/goodHabits"
+        android:name="com.example.spark.fragments.GoodHabits"
+        android:label="fragment_good_habits"
+        tools:layout="@layout/fragment_good_habits" />
+    <fragment
+        android:id="@+id/uglyHabits"
+        android:name="com.example.spark.fragments.UglyHabits"
+        android:label="fragment_ugly_habit"
+        tools:layout="@layout/fragment_ugly_habit" />
+</navigation>

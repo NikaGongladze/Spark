@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuBadHabits"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="your habtis" />
+    <item
+        android:id="@+id/menuGoodHabits"
+        android:icon="@drawable/ic_baseline_account_balance_wallet_24"
+        android:title="finances" />
+    <item
+        android:id="@+id/menuUglyHabit"
+        android:icon="@drawable/ic_baseline_people_24"
+        android:title="community" />
+
+</menu>
