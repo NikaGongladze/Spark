@@ -12,6 +12,8 @@ constraintlayout = "2.2.1"
 recyclerview-swipedecorator = "1.4"
 navigation = "2.9.0"
 glide = "4.14.2"
+googleGmsGoogleServices = "4.4.2"
+firebaseDatabase = "21.0.0"
 
 [libraries]
 glide = { group = "com.github.bumtech.glide", name = "glide", version.ref = "glide" }
@@ -27,11 +29,13 @@ androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
 androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+firebase-database = { group = "com.google.firebase", name = "firebase-database", version.ref = "firebaseDatabase" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 androidx-navigation-safeargs-kotlin = { id = "androidx.navigation.safeargs.kotlin" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
 
 [bundles]
 androidx-navigation = ["navigation-ui", "navigation-fragment"]

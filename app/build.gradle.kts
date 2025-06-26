@@ -2,6 +2,7 @@ plugins {
 	alias(libs.plugins.android.application)
 	alias(libs.plugins.kotlin.android)
 	alias(libs.plugins.androidx.navigation.safeargs.kotlin)
+	alias(libs.plugins.google.gms.google.services)
 }
 
 android {
@@ -48,7 +49,7 @@ dependencies {
 	implementation(libs.androidx.constraintlayout)
 	implementation(libs.bundles.androidx.navigation)
 	implementation(libs.recyclerview.swipedecorator)
-	implementation(libs.glide)
+	implementation(libs.firebase.database)
 	testImplementation(libs.junit)
 	androidTestImplementation(libs.androidx.junit)
 	androidTestImplementation(libs.androidx.espresso.core)
