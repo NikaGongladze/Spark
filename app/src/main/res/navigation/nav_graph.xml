@@ -15,9 +15,4 @@
         android:name="com.example.spark.fragments.GoodHabits"
         android:label="fragment_good_habits"
         tools:layout="@layout/fragment_good_habits" />
-    <fragment
-        android:id="@+id/uglyHabits"
-        android:name="com.example.spark.fragments.UglyHabits"
-        android:label="fragment_ugly_habit"
-        tools:layout="@layout/fragment_ugly_habit" />
 </navigation>

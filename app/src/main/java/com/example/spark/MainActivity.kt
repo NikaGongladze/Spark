@@ -38,7 +38,6 @@ class MainActivity : AppCompatActivity() {
 					when (position) {
 						0 -> navView.menu.findItem(R.id.menuBadHabits).isChecked = true
 						1 -> navView.menu.findItem(R.id.menuGoodHabits).isChecked = true
-						2 -> navView.menu.findItem(R.id.menuUglyHabit).isChecked = true
 					}
 				}
 			})
@@ -51,10 +50,6 @@ class MainActivity : AppCompatActivity() {
 					}
 					R.id.menuGoodHabits -> {
 						viewPager.currentItem = 1
-						return@setOnItemSelectedListener true
-					}
-					R.id.menuUglyHabit -> {
-						viewPager.currentItem = 2
 						return@setOnItemSelectedListener true
 					}
 				}

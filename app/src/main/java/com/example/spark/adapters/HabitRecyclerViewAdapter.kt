@@ -12,8 +12,20 @@ class HabitRecyclerViewAdapter(
 	private val habitList: ArrayList<Habit>
 ) : RecyclerView.Adapter<HabitRecyclerViewAdapter.HabitViewHolder>() {
 
+	private lateinit var listener: OnItemClickListener
+
+	fun setOnItemClickListener(listener: OnItemClickListener) {
+		this.listener = listener
+	}
+
 	inner class HabitViewHolder(val binding: ItemHabitBinding) :
-		RecyclerView.ViewHolder(binding.root)
+		RecyclerView.ViewHolder(binding.root) {
+			init {
+				itemView.setOnClickListener {
+					listener.onItemClick(bindingAdapterPosition)
+				}
+			}
+		}
 
 	override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HabitViewHolder {
 		val view = ItemHabitBinding.inflate(
@@ -44,16 +56,18 @@ class HabitRecyclerViewAdapter(
 
 		status.layoutParams = param
 
-		habitProgressBar.max = currentHabit.habitProgress.toInt() * 1000
+		habitProgressBar.max = currentHabit.habitProgress?.toInt()?.times(1000) ?: 0
 		ObjectAnimator.ofInt(
 			habitProgressBar,
 			"progress",
-			currentHabit.habitProgressNow.toInt() * 1000
+			(currentHabit.habitProgressNow?.toInt() ?: 0) * 1000
 		).setDuration(1400)
 			.start()
 
 		daysRemaining.text =
-			"Days remaining:" + (currentHabit.habitProgress.toInt() - currentHabit.habitProgressNow.toInt())
+			"Days remaining: " + ((currentHabit.habitProgress?.toInt()
+				?: 0) - (currentHabit.habitProgressNow?.toInt()
+				?: 0))
 	}
 
 	fun getItem(position: Int): Habit = habitList[position]
@@ -61,5 +75,9 @@ class HabitRecyclerViewAdapter(
 	fun deleteItem(position: Int) {
 		habitList.removeAt(position)
 		notifyDataSetChanged()
+	}
+
+	interface OnItemClickListener {
+		fun onItemClick(position: Int): String?
 	}
 }

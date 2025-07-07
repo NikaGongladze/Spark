@@ -9,9 +9,5 @@
         android:id="@+id/menuGoodHabits"
         android:icon="@drawable/ic_baseline_account_balance_wallet_24"
         android:title="finances" />
-    <item
-        android:id="@+id/menuUglyHabit"
-        android:icon="@drawable/ic_baseline_people_24"
-        android:title="community" />
 
 </menu>
