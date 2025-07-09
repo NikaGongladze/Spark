@@ -48,11 +48,11 @@ class HabitRecyclerViewAdapter(
 		val param = status.layoutParams as MarginLayoutParams
 
 		if (activeStatus.text.toString() == "completed")
-			param.setMargins(0, 0, 100, 0)
+			param.setMargins(0, 13, 100, 0)
 		else if (activeStatus.text.toString() == "inactive")
-			param.setMargins(0, 0, 60, 0)
+			param.setMargins(0, 13, 60, 0)
 		else
-			param.setMargins(0, 0, 0, 0)
+			param.setMargins(0, 13, 0, 0)
 
 		status.layoutParams = param
 
