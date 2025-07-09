@@ -4,13 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#CC000000"
     tools:context=".fragments.GoodHabits">
 
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="30dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/fragment_2_background"
         android:padding="15dp">
@@ -25,9 +26,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="@font/asap_regular"
+                android:fontFamily="@font/asap_bold"
                 android:text="current savings"
-                android:textColor="@color/purple_main_dark"
+                android:textColor="#FFFFFF"
                 android:textSize="27sp" />
 
 
@@ -42,8 +43,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-medium"
-                android:text="0,00 Gel"
-                android:textColor="#FFFFFF"
+                android:text="0,00 ₾"
+                android:textColor="#81FF81"
                 android:textSize="40sp" />
         </TableRow>
 
@@ -58,6 +59,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:fontFamily="@font/asap_bold"
                 android:text="Day since start date"
                 android:textSize="15sp" />
 
@@ -67,6 +69,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="end"
+                android:fontFamily="@font/asap_bold"
+                android:textColor="#81FF81"
                 android:text="0 days "
                 android:textSize="15sp"
                 android:textStyle="bold" />
@@ -83,6 +87,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="7"
+                android:fontFamily="@font/asap_bold"
                 android:text="Money spent per day"
                 android:textSize="15sp" />
 
@@ -91,12 +96,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
-
                 android:layout_weight="6"
                 android:gravity="end"
-                android:text="0,00 Gel"
-
-                android:textColor="@color/purple_main_dark"
+                android:text="0,00 ₾"
+                android:fontFamily="@font/asap_bold"
+                android:textColor="#81FF81"
                 android:textSize="15sp" />
 
             <TextView
@@ -104,7 +108,7 @@
                 android:layout_gravity="end"
                 android:layout_weight="1"
                 android:drawableEnd="@drawable/ic_baseline_edit_24"
-                android:drawableTint="@color/purple_main_dark"
+                android:drawableTint="#FFFD85"
                 android:gravity="end" />
         </TableRow>
     </TableLayout>
@@ -126,9 +130,9 @@
                 android:id="@+id/textView12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/asap_regular"
+                android:fontFamily="@font/asap_bold"
                 android:text="Projected savings"
-                android:textColor="@color/purple_main_dark"
+                android:textColor="#FFFFFF"
                 android:textSize="27sp" />
         </TableRow>
 
@@ -143,6 +147,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:fontFamily="@font/asap_bold"
                 android:text="Projected monthly saving"
                 android:textSize="15sp" />
 
@@ -152,8 +157,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="end"
-                android:text="0,00 Gel"
-                android:textColor="#FFFFFF"
+                android:fontFamily="@font/asap_bold"
+                android:text="0,00 ₾"
+                android:textColor="#81FF81"
                 android:textSize="15sp" />
         </TableRow>
 
@@ -168,6 +174,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:fontFamily="@font/asap_bold"
                 android:text="Projected yearly saving"
                 android:textSize="15sp" />
 
@@ -177,8 +184,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="end"
-                android:text="0,00 Gel "
-                android:textColor="#FFFFFF"
+                android:fontFamily="@font/asap_bold"
+                android:text="0,00 ₾"
+                android:textColor="#81FF81"
                 android:textSize="15sp" />
         </TableRow>
 
@@ -199,10 +207,12 @@
         android:id="@+id/textView8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:textSize="16sp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="5dp"
-        android:layout_marginEnd="10dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/asap_bold"
         android:text="Bad habits interrupt your life and prevent you from accomplishing your goals. They endanger your health — both mentally and physically. And they waste your time and energy."
-        android:textColor="#B2FFFFFF" />
+        android:textColor="#FFFFFF" />
 
 </LinearLayout>
