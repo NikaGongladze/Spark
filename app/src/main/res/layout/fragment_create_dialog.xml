@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#212121"
+    android:background="#000000"
     android:clickable="true"
     android:focusable="true"
     tools:context=".dialogs.CreateHabitDialogFragment">
@@ -12,10 +12,11 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#212121"
+        android:background="#000000"
         app:elevation="3dp">
 
         <FrameLayout
+            android:layout_marginTop="30dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
@@ -39,7 +40,7 @@
                 android:layout_marginEnd="15dp"
                 android:fontFamily="@font/raleway_bold"
                 android:text="save"
-                android:textColor="@color/purple_main_dark"
+                android:textColor="#FFFFFF"
                 android:textSize="24sp" />
 
         </FrameLayout>
@@ -50,7 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/exitIV"
-        android:layout_marginTop="66dp"
+        android:layout_marginTop="116dp"
         android:orientation="vertical"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:ignore="NotSibling">
@@ -62,20 +63,20 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:hint="goal"
-            android:textColorHint="#8D000000"
-            app:boxBackgroundColor="#8BFFFFFF"
+            android:textColorHint="#8DFFFFFF"
+            app:boxBackgroundColor="#307A63FD"
             app:boxCornerRadiusBottomEnd="15dp"
             app:boxCornerRadiusBottomStart="15dp"
             app:boxCornerRadiusTopEnd="15dp"
             app:boxCornerRadiusTopStart="15dp"
-            app:boxStrokeColor="@color/black"
+            app:boxStrokeColor="@color/purple_700"
             app:boxStrokeWidth="2.5dp"
             app:startIconDrawable="@drawable/ic_baseline_edit_24">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
+                android:textColor="#FFFFFF"
                 android:textColorHint="@color/black" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -87,13 +88,13 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:hint="pick a date"
-            android:textColorHint="#8D000000"
-            app:boxBackgroundColor="#8BFFFFFF"
+            android:textColorHint="#8DFFFFFF"
+            app:boxBackgroundColor="#307A63FD"
             app:boxCornerRadiusBottomEnd="15dp"
             app:boxCornerRadiusBottomStart="15dp"
             app:boxCornerRadiusTopEnd="15dp"
             app:boxCornerRadiusTopStart="15dp"
-            app:boxStrokeColor="@color/black"
+            app:boxStrokeColor="@color/purple_700"
             app:boxStrokeWidth="2.5dp"
             app:startIconDrawable="@drawable/ic_baseline_calendar_month_24">
 
@@ -111,13 +112,13 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:hint="money spent per day"
-            android:textColorHint="#8D000000"
-            app:boxBackgroundColor="#8BFFFFFF"
+            android:textColorHint="#8DFFFFFF"
+            app:boxBackgroundColor="#307A63FD"
             app:boxCornerRadiusBottomEnd="15dp"
             app:boxCornerRadiusBottomStart="15dp"
             app:boxCornerRadiusTopEnd="15dp"
             app:boxCornerRadiusTopStart="15dp"
-            app:boxStrokeColor="@color/black"
+            app:boxStrokeColor="@color/purple_700"
             app:boxStrokeWidth="2.5dp"
             app:startIconDrawable="@drawable/ic_baseline_attach_money_24">
 
